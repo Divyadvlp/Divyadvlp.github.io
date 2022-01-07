@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(76, 241, 76);
+            margin: 2%;
+            /* display: none; */
+        }
+        #box2{
+            width: 100px;
+            height: 100px;
+            background-color: darkblue;
+            margin: 2%;
+            /* display: none; */
+        }
+        #box3{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(248, 24, 192);
+            margin: 2%;
+            /* display: none; */
+        } 
+        #box4{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(21, 220, 255);
+            margin: 2%;
+        }
+    </style>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <button>click to see fadeout effect in boxes</button>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("#box1").fadeOut(5000);
+            $("#box2").fadeOut(3000);
+             $("#box3").fadeOut("slow");
+             $("#box4").fadeOut();
+              });
+            });
+
+    </script>
+</body>
+</html>
